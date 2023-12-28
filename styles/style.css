@@ -1,0 +1,205 @@
+/*base principale*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+*{
+   box-sizing: border-box;
+   
+}
+ body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: rgb(75, 72, 72);
+    margin: 0;
+ }
+
+ a{
+   text-decoration: none;
+ }
+
+ img{
+   max-width: 100%;
+ }
+
+
+ .list-unstyled{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+
+ }
+
+ .container{
+   padding: 1rem 2rem;
+   font-size:20px;
+ }
+
+ .d-flex{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .grid {
+   display: flex;
+   flex-wrap: wrap ;
+   align-items: center;
+ }
+
+ .grid__item{
+   width: 100%;
+ }
+
+ @media screen and(min-width:750px) {
+   .container{
+      max-height: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+   }
+   
+ }
+
+
+/*sections*/
+.header{
+   background-color: whitesmoke;
+   border-bottom: 1px solid #eee;  
+}
+
+.header .logo{
+   font-size: 2rem;
+   letter-spacing: 2px;
+}
+
+.navbar{
+   display: none;
+}
+
+.header li{
+   display: inline-flex;
+   align-items: center;
+   padding: 0 .5rem;
+}
+
+.header a{
+   color: rgb(59, 57, 57);
+}
+
+
+.header .right{
+   display: flex;
+   align-items: center;
+}
+
+.social{
+   display: flex;
+}
+
+.social a{
+   padding: 0 3px;
+}
+
+.social .icon{
+   height: 18px;
+}
+
+.header a:hover{
+   color: rgb(243, 37, 37) ;
+}
+ 
+
+.burger{
+   background: none;
+   border:none ;
+   cursor: pointer;
+   width: 35px;
+   height: 35px;
+   position: relative;
+   margin-left:1rem ;
+}
+
+.burger .bar{
+   display: block;
+   width: 22px;
+   height: 3px;
+   background: black;
+}
+
+.burger .bar::before, .burger .bar::after{
+   display: block;
+   content: "";
+   width: 22px;
+   height: 3px;
+   background: black;
+   position: aboslue;
+   top: 0;
+}
+
+.burger .bar::before{
+   transform: translateY(-8px);
+}
+
+.burger .bar::after{
+   transform: translateY(8px);
+}
+
+@media screen and (max-width:748px){
+
+}
+
+
+@media screen and (min-width:750px){
+   .navbar{
+      display: flex;
+   }
+   .burger{
+      display: none;
+   }
+}
+
+.hero{
+   background-color: rgb(84, 192, 178);
+   color: white;
+   padding: 1rem 0 0 0;
+}
+
+.hero__grid{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+   @media screen and (max-width:749px) {
+      
+         .hero__item.left{
+            order: 2;
+         }
+         
+         .hero__item.right{
+            order: 1;
+         }
+      }
+          
+      
+
+
+   @media screen and (min-width:750px) {
+      .hero__item{
+         flex:1 0 50% ;  
+   }
+   .hero__avatar img {
+      max-width: 400px;
+      border-radius: 50% ;
+
+   }
+}
+
+.toto{
+
+}
+
+@media screen and (min-width:750px) {
+   
+}
